@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"..\obj\main.o"
+"..\obj\startup_acm32f0x0.o"
+"..\obj\system_acm32f0x0.o"
+"..\obj\hal_crc.o"
+"..\obj\hal_gpio.o"
+"..\obj\hal_uart.o"
+"..\obj\hal_timer.o"
+"..\obj\hal_eflash.o"
+"..\src\HAL_Driver\Src\HAL_EFlash_EX.lib"
+"..\obj\hal_dma.o"
+"..\obj\hal_adc.o"
+"..\obj\hal_exti.o"
+"..\obj\port.o"
+"..\obj\timer.o"
+"..\obj\adc.o"
+"..\obj\flash.o"
+"..\obj\ble.o"
+"..\obj\iic_sim.o"
+"..\obj\inertial_chip.o"
+"..\obj\app.o"
+"..\obj\ble_app.o"
+"..\obj\motor_app.o"
+"..\obj\malloc.o"
+"..\obj\led_app.o"
+--library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\electric-toothbrush.map" -o ..\obj\electric-toothbrush.axf
